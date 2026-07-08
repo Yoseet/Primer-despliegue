@@ -2,7 +2,7 @@
 set -e
 
 MYSQL_ROOT_PASSWORD="${MYSQL_ROOT_PASSWORD:-rootpass}"
-
+rm -f /var/www/html/index.html
 service mysql start
 service apache2 start
 
